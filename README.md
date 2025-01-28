@@ -1,5 +1,11 @@
 <h1>SM Hunting</h1>
 
+_An edited version adding qb-target exports instead of 3D text (old school)_
+
+CREDITS to SM for providing the code and general mechanics around the script
+
+you can add me on Discord for further qb-target related changes if needed : https://discord.gg/ZbgnQYUmeR
+
 <h2> Hunting Script for QB Core </h2>
 This script allowes player to hunt animals and collect rewards from them such as meat, leather, feather and money.
 
