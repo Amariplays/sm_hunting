@@ -3,7 +3,7 @@ local isHunting = false
 local spawnedAnimals = {}
 local deadAnimals = {}
 
--- Function to check weapon license
+-- Function to check weapon license important!!
 local function CheckWeaponLicense(callback)
     local Player = QBCore.Functions.GetPlayerData()
     local hasLicense = false
