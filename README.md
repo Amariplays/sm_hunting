@@ -2,7 +2,7 @@
 
 _An edited version adding qb-target exports instead of 3D text (old school)_
 
-CREDITS to SM for providing the code and general mechanics around the script
+CREDITS to [SM](https://github.com/ScienceDestroy) for providing the code and general mechanics around the script
 
 you can add me on Discord for further qb-target related changes if needed : https://discord.gg/ZbgnQYUmeR
 
