@@ -1,29 +1,28 @@
 Config = {}
 
-Config.Lang="ru" --eng/ru
+Config.Lang = "ru" -- Available options: "eng", "ru"
 
--- Основные настройки охоты
-Config.HuntingZone = vector3(-1498.12, 4578.19, 35.36) -- Координаты зоны охоты
-Config.SpawnRadius = 750.0 -- Радиус спавна животных
-Config.ZoneCheckRadius = 800.0 -- Радиус проверки нахождения в зоне охоты
+-- Main Hunting Settings
+Config.HuntingZone = vector3(-1498.12, 4578.19, 35.36) -- Hunting zone coordinates
+Config.SpawnRadius = 750.0 -- Radius for spawning animals
+Config.ZoneCheckRadius = 800.0 -- Radius for checking if the player is in the hunting zone
 
-
--- Метки на карте
+-- Map Markers
 Config.Markers = {
-    Start = vector3(-1493.67, 4971.6, 63.91), -- Начало охоты
-    End = vector3(-1491.92, 4975.19, 63.73), -- Завершение охоты
+    Start = vector3(-1493.67, 4971.6, 63.91), -- Start hunting point
+    End = vector3(-1491.92, 4975.19, 63.73), -- End hunting point
 }
 
--- Настройки спавна животных
-Config.MaxAnimals = 10 -- Максимальное количество животных в зоне
-Config.SpawnChance = { -- Вероятность спавна каждого животного (в процентах)
+-- Animal Spawn Settings
+Config.MaxAnimals = 10 -- Maximum number of animals in the zone
+Config.SpawnChance = { -- Spawn chance for each animal (in percentages)
     ["a_c_deer"] = 40,
     ["a_c_rabbit_01"] = 30,
     ["a_c_mtlion"] = 20,
     ["a_c_crow"] = 10,
 }
 
--- Список животных
+-- List of Animals
 Config.Animals = {
     {
         name = "deer",
@@ -44,5 +43,27 @@ Config.Animals = {
         name = "crow",
         model = "a_c_crow",
         reward = "bird_carcass"
+    }
+}
+
+-- qb-target Settings
+Config.Target = {
+    Enabled = true, -- Enable or disable qb-target interactions
+    Harvest = {
+        label = "Harvest Animal",
+        icon = "fas fa-hand-paper", -- Icon for harvesting
+        distance = 2.0 -- Interaction distance
+    },
+    Markers = {
+        Start = {
+            label = "Start Hunting",
+            icon = "fas fa-play", -- Icon for starting hunting
+            distance = 2.0 -- Interaction distance
+        },
+        End = {
+            label = "End Hunting",
+            icon = "fas fa-stop", -- Icon for ending hunting
+            distance = 2.0 -- Interaction distance
+        }
     }
 }
