@@ -1,20 +1,27 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'sm-scripts'
+author 'sm-scripts edited by Amari-Javil https://discord.gg/ZbgnQYUmeR'
 description 'QB-Core Hunting Script'
 version '1.0.0'
 
+-- Shared
 shared_scripts {
-    '@qb-core/shared/locale.lua',
-    'config.lua',
-    'locales/*.lua'
+    'config.lua'
 }
 
-client_scripts {
-    'client/*.lua'
-}
-
+-- Server
 server_scripts {
-    'server/*.lua'
+    'server.lua'
+}
+
+-- Client
+client_scripts {
+    'client.lua'
+}
+
+-- Dependencies
+dependencies {
+    'qb-core',
+    'qb-target'
 }
